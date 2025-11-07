@@ -9,7 +9,7 @@ Please use it at your own risk.<br>
 On Mac, you cannot use downloaded plug-ins directly.<br>
 https://helpx.adobe.com/jp/indesign/kb/indesign-and-macos-catalina.html<br>
 Refer to the above and use Terminal to<br>
-sudo xattr -r -d com.apple.quarantine /Applications/Adobe\ Indesign\ 2025/Plug-ins/KohakuExtendScriptQueryInfoPanelText.InDesignPlugin<br>
+sudo xattr -r -d com.apple.quarantine /Applications/Adobe\ Indesign\ 2025/Plug-ins/KohakuExtendScriptLayoutViewLocation.InDesignPlugin<br>
 Please execute.
 
 ## extendScript for JavaScript
@@ -37,7 +37,7 @@ SDK/devtools/dolly/dolly.jar<br>
 use<br>
 <img width="486" height="593" alt="dolly1" src="https://github.com/user-attachments/assets/7bf54bc5-b48a-4d9d-88b9-c52fcc0d8c5a" /><br>
 <img width="486" height="593" alt="dolly2" src="https://github.com/user-attachments/assets/dd42c974-86ad-41fa-aee8-165b3f40436a" /><br>
-<img width="486" height="593" alt="dolly3" src="https://github.com/user-attachments/assets/f7a1379d-c5b5-436e-ba4d-ee23c449ce9e" /><br>
+<img width="486" height="593" alt="dolly3" src="https://github.com/user-attachments/assets/90963af7-1fcf-47f8-ac71-cc16f266ff2d" /><br>
 <img width="486" height="593" alt="dolly4" src="https://github.com/user-attachments/assets/82b91ecf-b52d-4a31-9d2c-f7f635abab56" /><br>
 The project directory is located at<br>
 SDK/build/mac/prj<br>
@@ -46,7 +46,7 @@ Set up and create as follows.
 **4. Download the source from Git**<br>
 ![Git](https://github.com/user-attachments/assets/5157f513-096f-4e2e-b471-af644948e97c)<br>
 Place the source files in the<br>
-SDK/source/sdksamples/kohakuExtendScriptQueryInfoPanelText
+SDK/source/sdksamples/kohakuExtendScriptLayoutViewLocation
 folder.
 
 **5. Build in Xcode**<br>
@@ -56,7 +56,7 @@ Set the build configuration to Release.<br>
 Product > Build
 
 **6. Load PlugIn**<br>
-SDK/build/mac/release_cocoa64/KohakuExtendScriptQueryInfoPanelText.InDesignPlugin<br>
+SDK/build/mac/release_cocoa64/KohakuExtendScriptLayoutViewLocation.InDesignPlugin<br>
 Place the PlugIn in the PlugIn folder in InDesign.<br>
 If the message “As the correct plugin” appears.<br>
 Product > Clean Build Folder...<br>
