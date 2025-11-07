@@ -15,6 +15,7 @@ Please execute.
 ## extendScript for JavaScript
 ```
 // Assuming there are two documentsAlign the Layout View coordinates with the active Layout View.
+app.documents.lastItem().layoutWindows.firstItem().zoomPercentage = app.activeWindow.zoomPercentage;
 app.documents.lastItem().layoutWindows.firstItem().locationAtFrameOriginX = app.activeWindow.locationAtFrameOriginX;
 app.documents.lastItem().layoutWindows.firstItem().locationAtFrameOriginY = app.activeWindow.locationAtFrameOriginY;
 ```
