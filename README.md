@@ -14,30 +14,9 @@ Please execute.
 
 ## extendScript for JavaScript
 ```
-// Retrieve the text displayed on the information panel.
-
-// TypeToolPanelCursorXLocationLabel
-value = app.queryInfoPanelText("0x17D00", 83);
-alert(value);
-
-// TypeToolPanelCursorYLocationLabel
-value = app.queryInfoPanelText("0x17D00", 85);
-alert(value);
-
-// Save the list to the desktop.
-var text = "";
-for(i = 1; i <= 255; i++){
-	value = app.queryInfoPanelText("0x15C00", i);
-	text += "0x15C00 " + i + " : " + value + "\n";
-}
-for(i = 1; i <= 255; i++){
-	value = app.queryInfoPanelText("0x17D00", i);
-	text += "0x17D00 " + i + " : " + value + "\n";
-}
-var f0 = File("~/desktop/InfoPanelText.txt");
-f0.open("w");
-f0.write(text);
-f0.close();
+// Assuming there are two documentsAlign the Layout View coordinates with the active Layout View.
+app.documents.lastItem().layoutWindows.firstItem().locationAtFrameOriginX = app.activeWindow.locationAtFrameOriginX;
+app.documents.lastItem().layoutWindows.firstItem().locationAtFrameOriginY = app.activeWindow.locationAtFrameOriginY;
 ```
 
 ## Build Method
