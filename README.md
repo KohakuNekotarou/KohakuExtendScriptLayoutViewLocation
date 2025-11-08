@@ -50,7 +50,7 @@ SDK/source/sdksamples/kohakuExtendScriptLayoutViewLocation
 folder.
 
 **5. Build in Xcode**<br>
-Load KohakuExtendScriptLayoutViewLocation project in Xcode.<br>
+Load SDK/build/mac/prj/KohakuExtendScriptLayoutViewLocation project in Xcode.<br>
 Set the build configuration to Release.<br>
 <img width="279" height="58" alt="rere" src="https://github.com/user-attachments/assets/420c409a-f7f0-495f-95bf-f61c1497d380" /><br>
 Product > Build
