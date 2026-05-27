@@ -1,27 +1,3 @@
-//========================================================================================
-//  
-//  $File: $
-//  
-//  Owner: 
-//  
-//  $Author: $
-//  
-//  $DateTime: $
-//  
-//  $Revision: $
-//  
-//  $Change: $
-//  
-//  Copyright 1997-2012 Adobe Systems Incorporated. All rights reserved.
-//  
-//  NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance 
-//  with the terms of the Adobe license agreement accompanying it.  If you have received
-//  this file from a source other than Adobe, then your use, modification, or 
-//  distribution of it requires the prior written permission of Adobe.
-//  
-//========================================================================================
-
-
 #ifndef __KESLVLID_h__
 #define __KESLVLID_h__
 
@@ -33,7 +9,7 @@
 
 // Plug-in:
 #define kKESLVLPluginName	"KohakuExtendScriptLayoutViewLocation"			// Name of this plug-in.
-#define kKESLVLPrefixNumber	0xe204455 		// Unique prefix number for this plug-in(*Must* be obtained from Adobe Developer Support).
+#define kKESLVLPrefixNumber	0x204455 		// Unique prefix number for this plug-in(*Must* be obtained from Adobe Developer Support).
 #define kKESLVLVersion		kSDKDefPluginVersionString						// Version of this plug-in (for the About Box).
 #define kKESLVLAuthor		""					// Author of this plug-in (for the About Box).
 
@@ -55,7 +31,7 @@ DECLARE_PMID(kClassIDSpace, kKESLVLScriptProviderBoss, kKESLVLPrefix + 0)
 //DECLARE_PMID(kInterfaceIDSpace, IID_IKESLVLINTERFACE, kKESLVLPrefix + 0)
 
 // ImplementationIDs:
-DECLARE_PMID(kImplementationIDSpace, kKESLVLScriptProviderImpl, kKESLVLPrefix + 0 )
+DECLARE_PMID(kImplementationIDSpace, kKESLVLScriptProviderImpl, kKESLVLPrefix + 0)
 
 // ActionIDs:
 DECLARE_PMID(kActionIDSpace, kKESLVLAboutActionID, kKESLVLPrefix + 0)
@@ -65,9 +41,10 @@ DECLARE_PMID(kActionIDSpace, kKESLVLAboutActionID, kKESLVLPrefix + 0)
 //DECLARE_PMID(kWidgetIDSpace, kKESLVLWidgetID, kKESLVLPrefix + 2)
 
 //Script Element IDs
-
 DECLARE_PMID(kScriptInfoIDSpace, kKESLVLLocationAtFrameOriginXPropertyScriptElement, kKESLVLPrefix + 0)
 DECLARE_PMID(kScriptInfoIDSpace, kKESLVLLocationAtFrameOriginYPropertyScriptElement, kKESLVLPrefix + 1)
+DECLARE_PMID(kScriptInfoIDSpace, kKESLVLLocationAtFrameCenterXPropertyScriptElement, kKESLVLPrefix + 2)
+DECLARE_PMID(kScriptInfoIDSpace, kKESLVLLocationAtFrameCenterYPropertyScriptElement, kKESLVLPrefix + 3)
 
 // "About Plug-ins" sub-menu:
 #define kKESLVLAboutMenuKey			kKESLVLStringPrefix "kKESLVLAboutMenuKey"

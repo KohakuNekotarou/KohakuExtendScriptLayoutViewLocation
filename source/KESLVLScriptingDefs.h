@@ -1,27 +1,3 @@
-//========================================================================================
-//  
-//  $File: $
-//  
-//  Owner: 
-//  
-//  $Author: $
-//  
-//  $DateTime: $
-//  
-//  $Revision: $
-//  
-//  $Change: $
-//  
-//  Copyright 1997-2012 Adobe Systems Incorporated. All rights reserved.
-//  
-//  NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance 
-//  with the terms of the Adobe license agreement accompanying it.  If you have received
-//  this file from a source other than Adobe, then your use, modification, or 
-//  distribution of it requires the prior written permission of Adobe.
-//  
-//========================================================================================
-
-
 #ifndef __KESLVLScriptingDefs_h__
 #define __KESLVLScriptingDefs_h__
 
@@ -34,9 +10,10 @@ DECLARE_GUID(CPrefs_CLSID, kCPrefs_CLSID);
 // Property IDs
 enum KESLVLScriptProperties
 {
-	p_LocationAtFrameOriginX = 'KLFX',
-	p_LocationAtFrameOriginY = 'KLFY'
+	p_KESLVLLocationAtFrameOriginX = 'KLOX',
+	p_KESLVLLocationAtFrameOriginY = 'KLOY',
+	p_KESLVLLocationAtFrameCenterX = 'KLCX',
+	p_KESLVLLocationAtFrameCenterY = 'KLCY',
 };
-
 
 #endif // __KESLVLScriptingDefs_h__

@@ -1,26 +1,3 @@
-//========================================================================================
-//  
-//  $File: $
-//  
-//  Owner: 
-//  
-//  $Author: $
-//  
-//  $DateTime: $
-//  
-//  $Revision: $
-//  
-//  $Change: $
-//  
-//  Copyright 1997-2012 Adobe Systems Incorporated. All rights reserved.
-//  
-//  NOTICE:  Adobe permits you to use, modify, and distribute this file in accordance 
-//  with the terms of the Adobe license agreement accompanying it.  If you have received
-//  this file from a source other than Adobe, then your use, modification, or 
-//  distribution of it requires the prior written permission of Adobe.
-//  
-//========================================================================================
-
 #include "VCPlugInHeaders.h"
 
 // General includes:
@@ -39,10 +16,8 @@
 #include "WidgetID.h"
 #include "BuildNumber.h"
 #include "PlugInModel_UIAttributes.h"
-
 #include "ScriptInfoTypes.fh"
 #include "AppFrameworkID.h"
-
 #include "DocFrameworkID.h" // for kLayoutWindowObjectScriptElement
 
 // Project includes:
@@ -50,9 +25,7 @@
 #include "GenericID.h"
 #include "ShuksanID.h"
 #include "TextID.h"
-
 #include "KESLVLScriptingDefs.h"
-
 
 #ifdef __ODFRC__
 
@@ -179,8 +152,8 @@ resource VersionedScriptElementInfo(2)
 		Property
 		{
 			kKESLVLLocationAtFrameOriginXPropertyScriptElement,
-			p_LocationAtFrameOriginX,
-			"location at frame origin x",
+			p_KESLVLLocationAtFrameOriginX,
+			"KESLVL location at frame origin x",
 			"Location at frame origin x",
 			RealType,// type
 			{}
@@ -191,14 +164,38 @@ resource VersionedScriptElementInfo(2)
 		Property
 		{
 			kKESLVLLocationAtFrameOriginYPropertyScriptElement,
-			p_LocationAtFrameOriginY,
-			"location at frame origin y",
+			p_KESLVLLocationAtFrameOriginY,
+			"KESLVL location at frame origin y",
 			"Location at frame origin y",
 			RealType,// type
 			{}
 			kNoAttributeClass,// attribute class ID
 		}
-		
+
+		// Specifies a property
+		Property
+		{
+			kKESLVLLocationAtFrameCenterXPropertyScriptElement,
+			p_KESLVLLocationAtFrameCenterX,
+			"KESLVL location at frame center x",
+			"Location at frame center x",
+			RealType,// type
+			{}
+			kNoAttributeClass,// attribute class ID
+		}
+
+		// Specifies a property
+		Property
+		{
+			kKESLVLLocationAtFrameCenterYPropertyScriptElement,
+			p_KESLVLLocationAtFrameCenterY,
+			"KESLVL location at frame center y",
+			"Location at frame center y",
+			RealType,// type
+			{}
+			kNoAttributeClass,// attribute class ID
+		}
+
 		// Connects this plug-in's methods and properties to scripting.
 		Provider
 		{
@@ -210,10 +207,17 @@ resource VersionedScriptElementInfo(2)
 
 				// Access content location at frame origin.
 				// ExtendScript Example:
-				//		app.activeWindow.locationAtFrameOriginX = 0; // Set
-				//		y = app.activeWindow.locationAtFrameOriginY; // get
-				Property{ kKESLVLLocationAtFrameOriginXPropertyScriptElement, kReadWrite }, // Additional
-				Property{ kKESLVLLocationAtFrameOriginYPropertyScriptElement, kReadWrite }, // Additional
+				//		app.activeWindow.keslvlLocationAtFrameOriginX = 0; // Set
+				//		y = app.activeWindow.keslvlLocationAtFrameOriginY; // get
+				Property{ kKESLVLLocationAtFrameOriginXPropertyScriptElement, kReadWrite },
+				Property{ kKESLVLLocationAtFrameOriginYPropertyScriptElement, kReadWrite },
+
+				// Access content location at frame center.
+				// ExtendScript Example:
+				//		app.activeWindow.keslvlLocationAtFrameCenterX = 0; // Set
+				//		y = app.activeWindow.keslvlLocationAtFrameCenterY; // get
+				Property{ kKESLVLLocationAtFrameCenterXPropertyScriptElement, kReadWrite },
+				Property{ kKESLVLLocationAtFrameCenterYPropertyScriptElement, kReadWrite },
 			}
 		}
 	}
