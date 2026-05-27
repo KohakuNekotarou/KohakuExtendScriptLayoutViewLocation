@@ -15,9 +15,13 @@ Please execute.
 ## extendScript for JavaScript
 ```
 // Assuming there are two documentsAlign the Layout View coordinates with the active Layout View.
-app.documents.lastItem().layoutWindows.firstItem().zoomPercentage = app.activeWindow.zoomPercentage; // Existing properties
-app.documents.lastItem().layoutWindows.firstItem().locationAtFrameOriginX = app.activeWindow.locationAtFrameOriginX; // Additional properties provided by plug-ins
-app.documents.lastItem().layoutWindows.firstItem().locationAtFrameOriginY = app.activeWindow.locationAtFrameOriginY; // Additional properties provided by plug-ins
+// LocationAtFrameOrigin
+app.documents.lastItem().layoutWindows.firstItem().keslvlLocationAtFrameOriginX = app.activeWindow.keslvlLocationAtFrameOriginX;
+app.documents.lastItem().layoutWindows.firstItem().keslvlLocationAtFrameOriginY = app.activeWindow.keslvlLocationAtFrameOriginY;
+
+// LocationAtFrameCenter
+app.documents.lastItem().layoutWindows.firstItem().keslvlLocationAtFrameCenterX = app.activeWindow.keslvlLocationAtFrameCenterX;
+app.documents.lastItem().layoutWindows.firstItem().keslvlLocationAtFrameCenterY = app.activeWindow.keslvlLocationAtFrameCenterY;
 ```
 
 ## Build Method
