@@ -9,7 +9,7 @@ Please use it at your own risk.<br>
 On Mac, you cannot use downloaded plug-ins directly.<br>
 https://helpx.adobe.com/jp/indesign/kb/indesign-and-macos-catalina.html<br>
 Refer to the above and use Terminal to<br>
-sudo xattr -r -d com.apple.quarantine /Applications/Adobe\ Indesign\ 2025/Plug-ins/KohakuExtendScriptLayoutViewLocation.InDesignPlugin<br>
+sudo xattr -r -d com.apple.quarantine /Applications/Adobe\ Indesign\ 2026/Plug-ins/KohakuExtendScriptLayoutViewLocation.InDesignPlugin<br>
 Please execute.
 
 ## extendScript for JavaScript
